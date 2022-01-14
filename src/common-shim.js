@@ -89,7 +89,7 @@ AudioPlayInstantSound = function(src, volume) {
 	if (vol > 0) {
 		var audio = new Audio();
 		audio.src = src;
-        audio.crossOrigin = "Anonymous";
+        	audio.crossOrigin = "anonymous";
 		audio.volume = Math.min(vol, 1);
 		audio.play();
 	}
